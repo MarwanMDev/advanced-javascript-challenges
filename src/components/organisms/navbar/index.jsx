@@ -7,7 +7,7 @@ const Navbar = () => {
       <div className="font-bold text-3xl">Logo</div>
       <MenuItems />
       <div className="">
-        <button className="bg-orange-500 py-3 px-8 text-lg font-bold rounded-sm">
+        <button className="bg-purple-500 py-3 px-8 text-lg font-bold rounded-sm">
           Sign In
         </button>
       </div>

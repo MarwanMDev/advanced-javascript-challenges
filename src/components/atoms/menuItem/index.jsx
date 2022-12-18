@@ -12,7 +12,7 @@ const MenuItem = ({ label, active, onClick }) => {
       <AnimatePresence>
         {active === label && (
           <Motion animation="underLine">
-            <div className="bg-orange-400 h-1" />
+            <div className="bg-purple-400 h-1" />
           </Motion>
         )}
       </AnimatePresence>
