@@ -4,7 +4,7 @@ import { MenuItems } from '../../molecules';
 const Navbar = () => {
   return (
     <div className="flex flex-row items-center w-full px-10 py-10">
-      <div className="font-bold text-3xl">Logo</div>
+      <div className="font-bold text-3xl">MDev</div>
       <MenuItems />
       <div className="">
         <button className="bg-purple-500 py-3 px-8 text-lg font-bold rounded-sm">

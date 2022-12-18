@@ -4,7 +4,7 @@ import { HERO_IMAGES } from '../../../constants/api';
 
 const HeroSection = () => {
   return (
-    <Slider slidesPerView={1} className="px-10">
+    <Slider slidesPerView={1} className="px-20">
       {HERO_IMAGES.map((img, index) => (
         <SwiperSlide key={index}>
           <div className={`${img} bg-cover bg-center h-[80vh]`} />

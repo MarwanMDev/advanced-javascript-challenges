@@ -1,5 +1,8 @@
 import React from 'react';
-import { HeroSection } from './components/organisms';
+import {
+  FeaturedProducts,
+  HeroSection,
+} from './components/organisms';
 import MainLayout from './layouts/MainLayout';
 import { ThemeProvider } from '@mui/material/styles';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -11,6 +14,7 @@ const App = () => {
       <CssBaseline />
       <MainLayout>
         <HeroSection />
+        <FeaturedProducts />
       </MainLayout>
     </ThemeProvider>
   );
