@@ -1,0 +1,70 @@
+{
+  "breadcrumbs.enabled": false,
+  "files.trimTrailingWhitespace": true,
+  "explorer.confirmDelete": false,
+  "explorer.compactFolders": false,
+  "workbench.colorTheme": "Night Owl",
+  "workbench.sideBar.location": "left",
+  "workbench.startupEditor": "none",
+  "workbench.statusBar.visible": true,
+  "workbench.editor.enablePreview": false,
+  "workbench.activityBar.visible": true,
+  "workbench.editor.restoreViewState": true,
+  "terminal.integrated.fontFamily": "FiraCode-Retina",
+  "editor.fontFamily": "FiraCode-Retina",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 12,
+  "editor.tabSize": 2,
+  "editor.insertSpaces": true,
+  "editor.detectIndentation": false,
+  "editor.renderWhitespace": "none",
+  "editor.scrollBeyondLastLine": true,
+  "editor.minimap.enabled": false,
+  "editor.find.seedSearchStringFromSelection": "never",
+  "gitlens.defaultDateLocale": "en-US",
+  "gitlens.defaultDateFormat": null,
+  // syntax highlighting
+  "files.associations": {
+    ".env*": "makefile"
+  },
+  // prettier
+  "prettier.singleQuote": true,
+  "prettier.printWidth": 70,
+  "editor.formatOnSave": true,
+  "[javascript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[javascriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescript]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  // eslint
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": true
+  },
+  "eslint.validate": ["javascript"],
+  "javascript.validate.enable": false,
+  "javascript.updateImportsOnFileMove.enabled": "never",
+  "typescript.updateImportsOnFileMove.enabled": "never",
+  // auto generated
+  "explorer.confirmDragAndDrop": false,
+  "js/ts.implicitProjectConfig.checkJs": true,
+  "editor.formatOnPaste": true,
+  "editor.formatOnType": true,
+  "extensions.ignoreRecommendations": true,
+  "workbench.iconTheme": "material-icon-theme",
+  "git.autofetch": true,
+  "tabnine.experimentalAutoImports": true,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  }
+}
