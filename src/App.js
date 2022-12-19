@@ -1,5 +1,6 @@
 import React from 'react';
 import {
+  ExampleSection,
   FeaturedProducts,
   HeroSection,
 } from './components/organisms';
@@ -25,7 +26,11 @@ const App = () => {
         />
         <Route
           path="/example/:id"
-          element={<MainLayout></MainLayout>}
+          element={
+            <MainLayout>
+              <ExampleSection />
+            </MainLayout>
+          }
         />
       </Routes>
     </ThemeProvider>

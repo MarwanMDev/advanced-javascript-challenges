@@ -12,10 +12,11 @@ const ProductCardSlide = ({ id, title, rating, img }) => {
         {/* <p className="font-semibold text-3xl">$ {price}</p> */}
       </div>
       <div className="flex flex-row gap-x-[1px]">
+        <p>Difficulty:</p>
         {Array(rating)
-          .fill(0)
-          .map((key) => (
-            <Star key={key} className="text-orange-400" />
+          .fill()
+          .map((key, i) => (
+            <Star key={i} className="text-orange-400" />
           ))}
       </div>
       <Link
