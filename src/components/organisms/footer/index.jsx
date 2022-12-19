@@ -15,11 +15,11 @@ export const Footer: FC = (): ReactElement => {
       <Container maxWidth="lg">
         <Grid container direction="column" alignItems="center">
           <Grid item xs={12}>
-            <Typography variant="h5">React Starter App</Typography>
+            <Typography variant="h5">MDev</Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography color="textSecondary" variant="subtitle1">
-              {`${new Date().getFullYear()} | React | Material UI | React Router`}
+              {`${new Date().getFullYear()} | React | Material UI | React Router | Tailwind`}
             </Typography>
           </Grid>
         </Grid>
