@@ -5,33 +5,54 @@ export const HERO_IMAGES = [
 
 export const FEATURED_PRODUCTS = [
   {
-    title: 'Flipper',
-    rating: 4,
+    id: 1,
+    title: 'Plus Minus',
+    description:
+      'Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with  places after the decimal.',
+    rating: 1,
     img: require('../../assets/images/img1.jpg'),
+    sum: function (a, b) {
+      return a + b;
+    },
   },
   {
     title: 'Flipper',
     rating: 3,
     img: require('../../assets/images/img1.jpg'),
+    sum: function (a, b) {
+      return a + b;
+    },
   },
   {
     title: 'Flipper',
     rating: 1,
     img: require('../../assets/images/img1.jpg'),
+    sum: function (a, b) {
+      return a + b;
+    },
   },
   {
     title: 'Flipper',
     rating: 3,
     img: require('../../assets/images/img1.jpg'),
+    sum: function (a, b) {
+      return a + b;
+    },
   },
   {
     title: 'Flipper',
     rating: 4,
     img: require('../../assets/images/img1.jpg'),
+    sum: function (a, b) {
+      return a + b;
+    },
   },
   {
     title: 'Flipper',
     rating: 2,
     img: require('../../assets/images/img1.jpg'),
+    sum: function (a, b) {
+      return a + b;
+    },
   },
 ];

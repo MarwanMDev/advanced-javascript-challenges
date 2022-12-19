@@ -5,9 +5,12 @@ import 'swiper/swiper.min.css';
 import 'swiper/swiper-bundle.css';
 import 'swiper/css';
 import { NavigationButton } from '../../atoms';
+import { useWindowSize } from '../../../hooks/useWindowSize';
 
 const Slider = ({ children, title, className, ...rest }) => {
   const [swiperSlide, setSwiperSlide] = React.useState(null);
+  const { isMobile } = useWindowSize();
+
   const onNext = () => {
     swiperSlide.slideNext();
   };
@@ -26,9 +29,13 @@ const Slider = ({ children, title, className, ...rest }) => {
         modules={[Navigation, Pagination]}
         className="group"
       >
-        <NavigationButton type="prev" onClick={onPrev} />
+        {!isMobile && (
+          <NavigationButton type="prev" onClick={onPrev} />
+        )}
         {children}
-        <NavigationButton type="next" onClick={onNext} />
+        {!isMobile && (
+          <NavigationButton type="next" onClick={onNext} />
+        )}
       </Swiper>
     </div>
   );
