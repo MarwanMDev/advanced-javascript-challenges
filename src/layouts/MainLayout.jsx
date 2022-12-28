@@ -9,7 +9,9 @@ const MainLayout = ({ children }) => {
     <div className="min-h-screen flex flex-col">
       {isMobile ? <></> : <Navbar />}
 
-      <div className="flex flex-col gap-y-10">{children}</div>
+      <div className="flex flex-col gap-y-10 min-h-[82vh]">
+        {children}
+      </div>
       <Footer />
     </div>
   );
