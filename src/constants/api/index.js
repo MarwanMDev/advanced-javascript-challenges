@@ -8,7 +8,8 @@ export const FEATURED_PRODUCTS = [
     id: '1',
     title: 'Plus Minus',
     description:
-      'Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with  places after the decimal.',
+      'Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with 6 places after the decimal.',
+    note: 'This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to 10 are acceptable.',
     rating: 1,
     img: require('../../assets/images/img1.jpg'),
     excute: function (a, b) {
