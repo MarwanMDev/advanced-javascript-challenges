@@ -12,10 +12,22 @@ export const FEATURED_PRODUCTS = [
     note: 'This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to 10 are acceptable.',
     rating: 1,
     img: require('../../assets/images/img1.jpg'),
-    excute: function (a, b) {
-      // return a + b;
-      let c = a + b;
-      console.log(c);
+    excute: function (array) {
+      console.log(array.numbers);
+      let positveCount = 0,
+        negativeCount = 0,
+        zeroCount = 0;
+      const length = array.numbers.length;
+      for (let i = 0; i < length; i++) {
+        if (array.numbers[i] > 0) positveCount++;
+        else if (array.numbers[i] < 0) negativeCount++;
+        else zeroCount++;
+      }
+      return {
+        positveCount: (positveCount / length).toFixed(4),
+        negativeCount: (negativeCount / length).toFixed(4),
+        zeroCount: (zeroCount / length).toFixed(4),
+      };
     },
   },
   {
