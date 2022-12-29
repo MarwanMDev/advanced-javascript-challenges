@@ -1,7 +1,5 @@
 import React from 'react';
 import { useForm, useFieldArray } from 'react-hook-form';
-import { useParams } from 'react-router-dom';
-import { FEATURED_PRODUCTS } from '../../constants/api';
 import TextField from '@mui/material/TextField';
 import TableContainer from '@mui/material/TableContainer';
 import Paper from '@mui/material/Paper';
@@ -13,12 +11,7 @@ import TableRow from '@mui/material/TableRow';
 import CircularProgress from '@mui/material/CircularProgress';
 
 const PlusMinus = (props) => {
-  // const { id } = useParams();
-  // const example = FEATURED_PRODUCTS.find(
-  //   (example) => example.id === id
-  // );
-  let example = props.example;
-  console.log(example);
+  let { example } = props;
   const [isSubmitted, setIsSubmitted] = React.useState({
     data: {},
     status: false,

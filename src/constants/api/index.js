@@ -11,7 +11,7 @@ export const FEATURED_PRODUCTS = [
       'Given an array of integers, calculate the ratios of its elements that are positive, negative, and zero. Print the decimal value of each fraction on a new line with 6 places after the decimal.',
     note: 'This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to 10 are acceptable.',
     rating: 1,
-    img: require('../../assets/images/img1.jpg'),
+    img: require('../../assets/images/positiveNegative.jpeg'),
     excute: function (array) {
       let positveCount = 0,
         negativeCount = 0,
@@ -32,8 +32,8 @@ export const FEATURED_PRODUCTS = [
   {
     id: '2',
     title: 'Mini-Max Sum',
-    rating: 3,
-    img: require('../../assets/images/img1.jpg'),
+    rating: 2,
+    img: require('../../assets/images/hackerrank-mini-max-sum-solution.png'),
     sum: function (a, b) {
       return a + b;
     },
