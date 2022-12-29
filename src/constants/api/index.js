@@ -13,7 +13,6 @@ export const FEATURED_PRODUCTS = [
     rating: 1,
     img: require('../../assets/images/img1.jpg'),
     excute: function (array) {
-      console.log(array.numbers);
       let positveCount = 0,
         negativeCount = 0,
         zeroCount = 0;
