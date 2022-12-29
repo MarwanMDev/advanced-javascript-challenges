@@ -32,10 +32,29 @@ export const FEATURED_PRODUCTS = [
   {
     id: '2',
     title: 'Mini-Max Sum',
+    description:
+      'Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.',
     rating: 2,
     img: require('../../assets/images/hackerrank-mini-max-sum-solution.png'),
-    sum: function (a, b) {
-      return a + b;
+    excute: function (array) {
+      let minValue = 0,
+        maxValue = 0;
+      const { numbers } = array;
+      const length = array.numbers.length;
+
+      numbers.sort(function (a, b) {
+        return a - b;
+      });
+
+      for (let i = 0, j = length - 1; i < length - 1; i++, j--) {
+        minValue += numbers[i];
+        maxValue += numbers[j];
+      }
+
+      return {
+        minValue,
+        maxValue,
+      };
     },
   },
   {
