@@ -41,19 +41,18 @@ export const FEATURED_PRODUCTS = [
         maxValue = 0;
       const { numbers } = array;
       const length = array.numbers.length;
-
       numbers.sort(function (a, b) {
         return a - b;
       });
 
       for (let i = 0, j = length - 1; i < length - 1; i++, j--) {
-        minValue += numbers[i];
-        maxValue += numbers[j];
+        minValue += Number(numbers[i]);
+        maxValue += Number(numbers[j]);
       }
 
       return {
-        minValue,
-        maxValue,
+        minValue: minValue,
+        maxValue: maxValue,
       };
     },
   },
