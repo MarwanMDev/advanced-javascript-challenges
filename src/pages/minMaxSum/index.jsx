@@ -39,7 +39,7 @@ const MinMaxSum = (props) => {
           <form
             onSubmit={handleSubmit((data) => {
               setLoading(true);
-              let result = example?.excute(data);
+              let result = example?.execute(data);
               setIsSubmitted({
                 data: result,
                 status: true,

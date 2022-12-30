@@ -12,7 +12,7 @@ export const FEATURED_PRODUCTS = [
     note: 'This challenge introduces precision problems. The test cases are scaled to six decimal places, though answers with absolute error of up to 10 are acceptable.',
     rating: 1,
     img: require('../../assets/images/positiveNegative.jpeg'),
-    excute: function (array) {
+    execute: function (array) {
       let positveCount = 0,
         negativeCount = 0,
         zeroCount = 0;
@@ -36,7 +36,7 @@ export const FEATURED_PRODUCTS = [
       'Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers. Then print the respective minimum and maximum values as a single line of two space-separated long integers.',
     rating: 2,
     img: require('../../assets/images/hackerrank-mini-max-sum-solution.png'),
-    excute: function (array) {
+    execute: function (array) {
       let minValue = 0,
         maxValue = 0;
       const { numbers } = array;
@@ -59,10 +59,27 @@ export const FEATURED_PRODUCTS = [
   {
     id: '3',
     title: 'Time Conversion',
+    description:
+      'Given a time in 12-hour AM/PM format, convert it to military (24-hour) time.',
     rating: 1,
-    img: require('../../assets/images/img1.jpg'),
-    sum: function (a, b) {
-      return a + b;
+    img: require('../../assets/images/hackerrank-time-conversion-solution.png'),
+    execute: function (str) {
+      let { date } = str;
+      let ampm = date.slice(-2);
+      let hours = Number(date.slice(0, 2));
+      let time = date.slice(0, -2);
+
+      if (ampm === 'AM') {
+        if (hours === 12) {
+          return time.replace(date.slice(0, 2), '00');
+        }
+        return time;
+      } else if (ampm === 'PM') {
+        if (hours !== 12) {
+          return time.replace(date.slice(0, 2), String(hours + 12));
+        }
+        return time;
+      }
     },
   },
   {
